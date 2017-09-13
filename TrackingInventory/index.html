@@ -10,6 +10,16 @@
     <div><span>Name </span><input type="text" id="name"></div>
     <div><span>Serial </span><input type="text" id="serial"></div>
     <div><span>Value </span><input type="text" id="value"></div>
-    <button type="button" onclick="inv.Add()">Insert</button>
+    <button type="button" onclick="inven.Add()">Insert</button>
+    <div><span>Search: </span><input type="text" id="searchText"></div>
+    <button type="button" onclick="inven.PrintBySearch()">Search</button>
+
+    <table id="printingTable" style="width: 50%; float: right; text-align: center;">
+        <tr>
+            <th>Name</th>
+            <th>Serial</th>
+            <th>Value</th>
+        </tr>
+    </table>
 </body>
 </html>
